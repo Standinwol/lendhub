@@ -75,11 +75,9 @@ This guide will help you deploy the LendHub DeFi application to Vercel.
 
 ### Files Added/Modified:
 
-1. **`vercel.json`** - Vercel configuration
-   - Framework detection
-   - Build commands
+1. **`vercel.json`** - Vercel configuration (simplified)
    - Environment variables
-   - API routes configuration
+   - Minimal configuration for Next.js auto-detection
 
 2. **`next.config.js`** - Updated for better compatibility
    - Webpack polyfills for crypto and Node.js modules

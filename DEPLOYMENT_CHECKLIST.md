@@ -3,7 +3,7 @@
 ## Pre-Deployment Checklist
 
 ### 📋 Required Files Created/Modified:
-- [x] `vercel.json` - Vercel deployment configuration
+- [x] `vercel.json` - Vercel deployment configuration (simplified for Next.js)
 - [x] `next.config.js` - Updated with webpack polyfills
 - [x] `package.json` - Added browser polyfills and scripts
 - [x] `.env.local` - Environment variables for local development  
@@ -71,6 +71,7 @@ Set these in Vercel Project Settings → Environment Variables:
 - [ ] Check all polyfill dependencies are installed
 - [ ] Verify `next.config.js` webpack configuration
 - [ ] Ensure environment variables are set correctly
+- [ ] If getting "Function Runtimes must have a valid version" error, simplify `vercel.json`
 
 **MetaMask Issues:**
 - [ ] Verify Sepolia testnet is added to MetaMask
