@@ -4,6 +4,7 @@
 - [Project Layout](#project-layout)
     * [Top Level folders](#top-level-folders)
     * [Important Files](#important-files)
+- [🚀 Quick Deploy to Vercel](#-quick-deploy-to-vercel)
 - [Using & Testing LendHub on Sepolia](#using--testing-lendhub-on-sepolia)
 - [Cloning and Deploying the Dapp on Sepolia Testnet](#cloning-and-deploying-the-dapp-on-sepolia-testnet)
 - [Bootsrapping & running this project on your localhost using Hardhat](#bootsrapping--running-this-project-on-your-localhost-using-hardhat)
@@ -54,6 +55,24 @@ This fully on-chain DeFi app allows users to effortlessly deposit their coins (E
 2. hardhat.config.js - solidity version and run information, deployment network configuration 
 3. addresses.js - addresses exported for use use with hardhat local installed contracts
 4. .env - To store Infura/Alchemy API keys and your private key
+
+## 🚀 Quick Deploy to Vercel
+
+### One-Click Deploy
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Standinwol/lendhub)
+
+### Manual Deployment
+1. Fork this repository to your GitHub account
+2. Connect to [Vercel](https://vercel.com) with your GitHub account
+3. Import your forked repository
+4. Configure environment variables in Vercel dashboard:
+   ```
+   INFURA_SEPOLIA_API_URL=https://sepolia.infura.io/v3/1cc77b4ae4464802afae31d98852cf25
+   NEXT_PUBLIC_INFURA_SEPOLIA_API_URL=https://sepolia.infura.io/v3/1cc77b4ae4464802afae31d98852cf25
+   ```
+5. Deploy!
+
+**📖 Detailed deployment guide:** [VERCEL_DEPLOYMENT.md](./VERCEL_DEPLOYMENT.md)
 
 ## Using & Testing LendHub on Sepolia
 

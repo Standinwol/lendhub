@@ -3,7 +3,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy:vercel": "vercel --prod",
+    "build:test": "npm run build && npm start"
   },
   "dependencies": {
     "@metamask/detect-provider": "^2.0.0",
@@ -36,15 +38,24 @@
     "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "assert": "^2.0.0",
     "autoprefixer": "^10.4.12",
+    "browserify-zlib": "^0.2.0",
+    "crypto-browserify": "^3.12.0",
     "ethers": "^5.7.2",
     "hardhat": "^2.12.6",
     "hardhat-gas-reporter": "^1.0.9",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
     "postcss": "^8.4.18",
     "solidity-coverage": "^0.8.2",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
     "tailwindcss": "^3.2.4",
     "ts-node": "^10.9.1",
     "typechain": "^8.1.1",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "url": "^0.11.0"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
+  "devCommand": "next dev",
+  "env": {
+    "INFURA_SEPOLIA_API_URL": "https://sepolia.infura.io/v3/1cc77b4ae4464802afae31d98852cf25",
+    "NEXT_PUBLIC_INFURA_SEPOLIA_API_URL": "https://sepolia.infura.io/v3/1cc77b4ae4464802afae31d98852cf25"
+  },
+  "functions": {
+    "pages/api/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "regions": ["iad1"],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
